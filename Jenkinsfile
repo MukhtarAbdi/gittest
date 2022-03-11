@@ -4,7 +4,7 @@ pipeline {
       stage('ec2 deploy'){
           steps {
 	      sh 'cd /var/www/html/'
-              sh 'systemctl restart apache2'
+              sh 'sudo systemctl restart apache2'
           }
        }
     }
