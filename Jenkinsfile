@@ -6,7 +6,7 @@ pipeline {
 	      sh 'cd /var/www/html/'
               sh 'rm -rf index.html'
               sh 'git clone https://github.com/MukhtarAbdi/gittest.git'
-              sh 'systemctl restart httpd'
+              sh 'systemctl restart apache2'
           }
        }
     }
